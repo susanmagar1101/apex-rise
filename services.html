@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Services - Apex Rise IT Solution</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface": "#1a1c1b",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#454749",
+                        "surface-container-high": "#e8e8e6",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#735a00",
+                        "surface-container": "#eeeeec",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1a1c1b",
+                        "primary": "#000000",
+                        "on-primary-fixed": "#1a1c1e",
+                        "tertiary-fixed": "#e1e2e6",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-tertiary-fixed": "#191c1f",
+                        "background": "#f9f9f7",
+                        "tertiary": "#000000",
+                        "secondary-fixed-dim": "#ecc246",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#838486",
+                        "on-surface-variant": "#44474a",
+                        "surface": "#f9f9f7",
+                        "on-tertiary-container": "#818487",
+                        "inverse-primary": "#c6c6c9",
+                        "tertiary-container": "#191c1f",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1a1c1e",
+                        "tertiary-fixed-dim": "#c5c6ca",
+                        "surface-tint": "#5d5e61",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f4f4f2",
+                        "secondary-fixed": "#ffe08e",
+                        "primary-fixed": "#e2e2e5",
+                        "on-secondary-fixed-variant": "#584400",
+                        "surface-dim": "#dadad8",
+                        "surface-container-highest": "#e2e3e1",
+                        "on-tertiary-fixed-variant": "#44474a",
+                        "secondary-container": "#fed255",
+                        "outline": "#75777a",
+                        "surface-variant": "#e2e3e1",
+                        "inverse-surface": "#2f3130",
+                        "on-secondary-fixed": "#241a00",
+                        "secondary": "#755b00",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f7",
+                        "primary-fixed-dim": "#c6c6c9",
+                        "outline-variant": "#c5c6ca",
+                        "brand-gold": "#C9A227",
+                        "brand-gold-light": "#E5D39A",
+                        "border-light": "#E2E2DE"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem",
+                        "service-card": "6px"
+                    },
+                    spacing: {
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "32px",
+                        "section-gap": "80px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    fontFamily: {
+                        display: ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        caption: ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        display: ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "600" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        caption: ["12px", { lineHeight: "16px", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }]
+                    }
+                }
+            }
+        };
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .container-grid {
+                @apply max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface-container-high border-b border-outline-variant dark:border-outline sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-stack-md max-w-container-max mx-auto">
+<a class="flex items-center h-10" href="/"><div class="flex items-center gap-stack-sm"><div class="w-10 h-10 rounded-full bg-[#17191B] border border-outline-variant/30 overflow-hidden flex items-center justify-center shrink-0"><img alt="Apex Rise" class="w-full h-full object-contain" src="assets/logo-icon.png"></div><div class="flex flex-col leading-none"><span class="text-brand-gold font-bold text-label-md">Apex Rise</span><span class="text-[#17191B] text-caption font-medium">IT Solution</span></div></div></a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-gutter items-center">
+<li class=""><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest px-3 py-2 rounded-md duration-200 text-label-md font-label-md" href="/">Home</a></li>
+<li class=""><a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-secondary px-3 py-2 text-label-md font-label-md" href="/services">Services</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest px-3 py-2 rounded-md duration-200 text-label-md font-label-md" href="/about-us">About Us</a></li>
+<li class=""></li>
+</ul>
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary text-label-md font-label-md px-6 py-3 rounded hover:bg-on-surface-variant transition-colors duration-200" href="/contact">
+                Let's Talk →
+            </a>
+<!-- Mobile Menu Button (Icon only) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-section-gap border-b border-border-light bg-surface">
+<div class="container-grid flex flex-col items-center text-center max-w-4xl">
+<div class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider mb-stack-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+<h1 class="text-display font-display text-primary mb-stack-md">
+                    Digital <span class="text-brand-gold">Solutions</span> Built Around Your Business.
+                </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    From web development and mobile applications to SEO and IT solutions, we help businesses turn ideas into practical digital experiences.
+                </p>
+</div>
+</section>
+<!-- What We Do -->
+<!-- Main Services -->
+<section class="py-section-gap bg-surface-container-lowest border-b border-border-light">
+<div class="container-grid">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Service 01 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-service-card p-stack-lg group hover:bg-surface-container-low transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between min-h-[320px]">
+<div>
+<span class="text-display font-display text-brand-gold-light mb-stack-md block">01</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-stack-md">WEB DEVELOPMENT</h3>
+<ul class="text-body-md font-body-md text-on-surface-variant space-y-stack-sm mb-stack-lg">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Business Websites</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> E-commerce</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Custom Web Applications</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Responsive Development</li>
+</ul>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-service-card p-stack-lg group hover:bg-surface-container-low transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between min-h-[320px]">
+<div>
+<span class="text-display font-display text-brand-gold-light mb-stack-md block">02</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-stack-md">MOBILE APP DEVELOPMENT</h3>
+<ul class="text-body-md font-body-md text-on-surface-variant space-y-stack-sm mb-stack-lg">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Android Apps</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> iOS Apps</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Cross-platform Solutions</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> App Maintenance</li>
+</ul>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-service-card p-stack-lg group hover:bg-surface-container-low transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between min-h-[320px]">
+<div>
+<span class="text-display font-display text-brand-gold-light mb-stack-md block">03</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-stack-md">SEO &amp; DIGITAL GROWTH</h3>
+<ul class="text-body-md font-body-md text-on-surface-variant space-y-stack-sm mb-stack-lg">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Technical SEO</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> On-page Optimization</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Content Strategy</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Digital Strategy</li>
+</ul>
+</div>
+</div>
+<!-- Service 04 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-service-card p-stack-lg group hover:bg-surface-container-low transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between min-h-[320px]">
+<div>
+<span class="text-display font-display text-brand-gold-light mb-stack-md block">04</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-stack-md">SOFTWARE &amp; IT SOLUTIONS</h3>
+<ul class="text-body-md font-body-md text-on-surface-variant space-y-stack-sm mb-stack-lg">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Custom Software</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Business Systems</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> System Integration</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> IT Consultation</li>
+</ul>
+</div>
+</div>
+<!-- Service 05 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-service-card p-stack-lg group hover:bg-surface-container-low transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between min-h-[320px]">
+<div>
+<span class="text-display font-display text-brand-gold-light mb-stack-md block">05</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-stack-md uppercase">UI/UX DESIGN</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-stack-md">User-centered design that balances aesthetic appeal with functional clarity and ease of use.</p>
+<ul class="text-body-md font-body-md text-on-surface-variant space-y-stack-sm mb-stack-lg">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> User Research</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Wireframing</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Prototyping</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Interface Design</li>
+</ul>
+</div>
+</div>
+<!-- Service 06 -->
+<div class="bg-surface-container-lowest border border-border-light rounded-service-card p-stack-lg group hover:bg-surface-container-low transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between min-h-[320px]">
+<div>
+<span class="text-display font-display text-brand-gold-light mb-stack-md block">06</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-stack-md uppercase">GRAPHIC DESIGN</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-stack-md">Visual communication that defines your brand identity and connects with your audience across all platforms.</p>
+<ul class="text-body-md font-body-md text-on-surface-variant space-y-stack-sm mb-stack-lg">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Brand Identity</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Marketing Materials</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Social Media Graphics</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-brand-gold text-[20px]">check</span> Print Design</li>
+</ul>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Our Approach -->
+<section class="py-section-gap bg-surface border-b border-border-light"><div class="container-grid max-w-container-max mx-auto">
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary text-center mb-section-gap">The Right Solution Starts With Understanding.</h2>
+<div class="relative">
+<div class="hidden md:block absolute top-[50px] left-0 w-full h-[1px] bg-border-light z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col gap-stack-md bg-surface pr-4 relative">
+<span class="text-[64px] leading-none font-display text-brand-gold opacity-60">01</span>
+<h4 class="text-headline-md font-headline-md text-primary">DISCOVER</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Understanding your business goals, target audience, and existing technology landscape to define clear project requirements.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-stack-md bg-surface pr-4 relative">
+<span class="text-[64px] leading-none font-display text-brand-gold opacity-60">02</span>
+<h4 class="text-headline-md font-headline-md text-primary">PLAN</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Architecting the solution, creating wireframes, and outlining a strategic roadmap for efficient development.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-stack-md bg-surface pr-4 relative">
+<span class="text-[64px] leading-none font-display text-brand-gold opacity-60">03</span>
+<h4 class="text-headline-md font-headline-md text-primary">BUILD</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Executing the plan with clean code and agile methodologies, ensuring high-quality, scalable implementation.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col gap-stack-md bg-surface pr-4 relative">
+<span class="text-[64px] leading-none font-display text-brand-gold opacity-60">04</span>
+<h4 class="text-headline-md font-headline-md text-primary">IMPROVE</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Continuous monitoring, testing, and refinement to optimize performance and adapt to evolving business needs.</p>
+</div>
+</div>
+</div>
+</div></section>
+<!-- CTA Section -->
+<section class="py-section-gap bg-tertiary-container text-on-tertiary">
+<div class="container-grid flex flex-col items-center text-center max-w-3xl">
+<h2 class="text-display font-display mb-stack-md">Have an Idea You Want to Build?</h2>
+<p class="text-body-lg font-body-lg text-outline-variant mb-stack-lg max-w-xl mx-auto">
+                    Tell us what you're looking to achieve and let's discuss the right digital solution for your business.
+                </p>
+<a class="inline-flex items-center justify-center bg-brand-gold text-primary text-label-md font-label-md px-8 py-4 rounded hover:bg-brand-gold-light transition-colors duration-200" href="/contact">
+                    Let's Talk →
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary-container dark:bg-black py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-on-tertiary-container dark:text-outline-variant">
+<div class="md:col-span-1 flex flex-col gap-stack-md"><div class="flex items-center gap-stack-sm"><div class="w-12 h-12 rounded-full bg-[#17191B] border border-outline-variant/30 overflow-hidden flex items-center justify-center shrink-0"><img alt="Apex Rise" class="w-full h-full object-contain" src="assets/logo-icon.png"></div><div class="flex flex-col leading-none"><span class="text-brand-gold font-bold text-headline-md">Apex Rise</span><span class="text-on-tertiary text-label-md font-medium">IT Solution</span></div></div><p class="text-body-md font-body-md text-outline-variant mt-4">Building digital solutions with architectural precision.</p></div>
+<div class="flex flex-col gap-stack-sm">
+<span class="text-label-md font-label-md text-on-tertiary uppercase tracking-wider mb-2 block">Company</span>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/">Home</a>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/about-us">About Us</a>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/services">Services</a>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/contact">Contact Us</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<span class="text-label-md font-label-md text-on-tertiary uppercase tracking-wider mb-2 block">Services</span>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/services">Web Development</a>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/services">Mobile App Development</a>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/services">SEO &amp; Digital Growth</a>
+<a class="text-body-md font-body-md hover:text-secondary-container transition-colors duration-200 hover:underline underline-offset-4 w-max" href="/services">Software &amp; IT Solutions</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<span class="text-label-md font-label-md text-on-tertiary uppercase tracking-wider mb-2 block">Connect</span>
+<p class="text-body-md font-body-md flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-brand-gold">mail</span>info@apexrise.com</p>
+<p class="text-body-md font-body-md flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-brand-gold">call</span>+977-9816636599</p>
+<p class="text-body-md font-body-md flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-brand-gold">location_on</span>Pokhara, Nepal</p>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-section-gap pt-stack-md border-t border-on-surface-variant text-center md:text-left">
+<p class="text-caption font-caption text-outline-variant">Copyright © 2026 Apex Rise IT Solution. All rights reserved.</p>
+</div>
+</footer>
+
+
+
+
+</body></html>
