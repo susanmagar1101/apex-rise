@@ -1,0 +1,34 @@
+/* Apex Rise IT Solution: shared styles used on every page.
+   Brand colours: #17191B dark, #C9A227 gold, #F7F7F5 background, #666666 body text, #FFFFFF white. */
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; background-color: #F7F7F5; color: #17191B; overflow-x: hidden; }
+img { max-width: 100%; }
+
+.custom-gold-text, .gold-accent { color: #C9A227; }
+.custom-gold-border { border-bottom-color: #C9A227; }
+.custom-gold-bg { background-color: #C9A227; }
+.custom-dark-bg { background-color: #17191B; }
+.bg-off-white { background-color: #F7F7F5; }
+
+/* Keyboard users can jump straight to the page content. */
+.skip-link { position: absolute; left: 16px; top: -48px; z-index: 100; background: #17191B; color: #fff; padding: 10px 16px; border-radius: 4px; font-weight: 600; transition: top .15s; }
+.skip-link:focus { top: 12px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #C9A227; outline-offset: 2px; }
+
+/* Top menu: the current page is underlined in gold. */
+.nav-link { color: #44474a; padding-bottom: 4px; border-bottom: 2px solid transparent; transition: color .2s; }
+.nav-link:hover { color: #17191B; }
+.nav-link[aria-current="page"] { color: #17191B; font-weight: 700; border-bottom-color: #C9A227; }
+.mobile-link { display: block; padding: 14px 0; border-bottom: 1px solid #E2E2DE; color: #17191B; font-weight: 600; }
+.mobile-link[aria-current="page"] { color: #C9A227; }
+
+/* Small skill tags on the team cards. */
+.skill-tag { display: inline-block; font-size: 12px; line-height: 16px; padding: 4px 8px; border: 1px solid #E2E2DE; border-radius: 4px; background: #F7F7F5; color: #44474a; }
+
+/* Rotating word in the home page heading. */
+.rotating-slot { display: inline-block; position: relative; text-align: left; vertical-align: bottom; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
