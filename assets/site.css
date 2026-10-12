@@ -22,9 +22,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .mobile-link { display: block; padding: 14px 0; border-bottom: 1px solid #E2E2DE; color: #17191B; font-weight: 600; }
 .mobile-link[aria-current="page"] { color: #C9A227; }
 
-/* Small skill tags on the team cards. */
-.skill-tag { display: inline-block; font-size: 12px; line-height: 16px; padding: 4px 8px; border: 1px solid #E2E2DE; border-radius: 4px; background: #F7F7F5; color: #44474a; }
-
 /* Rotating word in the home page heading. */
 .rotating-slot { display: inline-block; position: relative; text-align: left; vertical-align: bottom; }
 

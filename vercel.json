@@ -2,9 +2,25 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/services", "destination": "/services.html" },
-    { "source": "/work", "destination": "/work.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html"
+    },
+    {
+      "source": "/work",
+      "destination": "/work.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/work/hazard-perception-training-simulator",
+      "destination": "/work/hazard-perception-training-simulator.html"
+    }
   ]
 }
