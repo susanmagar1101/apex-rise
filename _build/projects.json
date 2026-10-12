@@ -1,0 +1,109 @@
+{
+  "projects": [
+    {
+      "slug": "hazard-perception-training-simulator",
+      "name": "Hazard Perception Training Simulator",
+      "client": "Logistic &amp; Warehousing Company",
+      "sector": "Logistics and warehousing",
+      "summary": "A 3D hazard training simulator that runs in the web browser, with an employee portal, 78 safety guides and an admin portal for reports.",
+      "card_image": {
+        "file": "simulator-level-1.jpg",
+        "width": 1400,
+        "height": 788,
+        "alt": "Level 1 of the hazard perception simulator: a 3D warehouse with racking, a forklift, a spill and cones"
+      },
+      "page_title": "Hazard Perception Training Simulator | Case Study | Apex Rise IT Solution",
+      "page_description": "Case study: a 3D hazard perception training simulator, employee portal, 78 safety guides and admin reports built by Apex Rise for the Logistic &amp; Warehousing Company.",
+      "hero": {
+        "title_html": "Hazard Perception <span class=\"custom-gold-text\">Training</span> Simulator",
+        "intro": "A browser-based safety training system for the Logistic &amp; Warehousing Company, designed, built and tested by the Apex Rise team.",
+        "live_url": "https://warehousingcompany.vercel.app",
+        "image": {
+          "file": "simulator-level-1.jpg",
+          "width": 1400,
+          "height": 788,
+          "alt": "Inside the 3D warehouse simulator: racking, a forklift, a spill on the floor, cones and two workers, with the level, hazards found, time and score at the top"
+        }
+      },
+      "facts": [
+        [
+          "Client",
+          "Logistic &amp; Warehousing Company"
+        ],
+        [
+          "Project",
+          "Web application with a 3D training simulator"
+        ],
+        [
+          "Built with",
+          "Next.js, TypeScript, Three.js, Supabase, Vercel"
+        ],
+        [
+          "Testing",
+          "40 of 40 system test cases passed"
+        ]
+      ],
+      "brief": {
+        "heading": "Safety Training People Can Practise.",
+        "paragraphs": [
+          "The Logistic &amp; Warehousing Company asked us for hazard training that is practical and interactive, with progress tracking so managers can see how each employee is getting on.",
+          "We answered with one system that has a public website, a training portal for employees and an admin portal for managers. Everything runs in the web browser, so staff do not need to install anything."
+        ]
+      },
+      "delivered": {
+        "heading": "Five Parts, One System.",
+        "note": "The screenshots below come from the live system, using test accounts.",
+        "items": [
+          {
+            "image": "client-website.jpg",
+            "width": 1200,
+            "height": 750,
+            "title": "A public company website",
+            "text": "A public website for the Logistic &amp; Warehousing Company that introduces the business, explains its approach to workplace safety and leads staff into their training.",
+            "alt": "Home page of the Logistic and Warehousing Company website with the heading Moving goods. Protecting people."
+          },
+          {
+            "image": "simulator-hazard.jpg",
+            "width": 1200,
+            "height": 675,
+            "title": "A six-level 3D hazard simulator",
+            "text": "Employees explore a 3D warehouse in a 360 degree first-person view, right in the web browser, and click on the hazards they spot. Six levels hold 51 hazards in total, with a timer and a score for each level.",
+            "alt": "Close-up of a spill on the warehouse floor in the simulator, with the aiming dot used to click on a hazard"
+          },
+          {
+            "image": "employee-portal.jpg",
+            "width": 1200,
+            "height": 750,
+            "title": "An employee training portal",
+            "text": "Each employee signs in to a personal dashboard that shows the training levels, which ones are complete, how many hazards they have found and what to do next.",
+            "alt": "Employee dashboard showing training levels, levels completed and hazards identified"
+          },
+          {
+            "image": "safety-guide.jpg",
+            "width": 1200,
+            "height": 750,
+            "title": "78 safety guides and a knowledge assessment",
+            "text": "78 safety guides, each with a Quick Check to test understanding, and a knowledge assessment that checks what staff have learned.",
+            "alt": "A safety guide page on working at height with a list of guides down the side"
+          },
+          {
+            "image": "admin-reports.jpg",
+            "width": 1200,
+            "height": 750,
+            "title": "An admin portal with reports",
+            "text": "Managers add employees, follow their progress level by level and download the results as a CSV file or print a training report.",
+            "alt": "Admin training report with completion rate, hazard detection and average score, and a Download CSV button"
+          }
+        ]
+      },
+      "how_we_worked": {
+        "heading": "Four Roles, One Team.",
+        "text": "We met the client regularly, planned the work in sprints and tested every part before it went live. All 40 of our system test cases passed. Each of us had one main role:"
+      },
+      "cta": {
+        "title": "Have a Training, Booking or Business System in Mind?",
+        "text": "We can do the same for your business. Tell us what you need and we will explain how we would build it."
+      }
+    }
+  ]
+}
